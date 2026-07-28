@@ -3,128 +3,199 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>نُزل الماسة | فندق بوتيك في مكة المكرمة</title>
+<meta name="description" content="نزل الماسة - فندق بوتيك في مكة المكرمة يجمع الفخامة الهادئة والخدمة الشخصية والقرب من الحرم.">
+<title>نزل الماسة | فندق بوتيك في مكة المكرمة</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@500;600;700&family=Noto+Sans+Arabic:wght@300;400;500;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav id="mainNav">
+<nav id="mainNav" aria-label="التنقل الرئيسي">
   <div class="nav-inner">
-    <div class="brand">الماسة</div>
-    <ul class="nav-links">
+    <a class="brand" href="#home" aria-label="نزل الماسة">
+      <span class="brand-mark">م</span>
+      <span>نزل الماسة</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
       <li><a href="#home">الرئيسية</a></li>
-      <li><a href="#about">حكايتنا</a></li>
+      <li><a href="#about">التجربة</a></li>
       <li><a href="#rooms">الأجنحة</a></li>
+      <li><a href="#amenities">الخدمات</a></li>
       <li><a href="#gallery">المعرض</a></li>
-      <li><a href="#contact">التواصل</a></li>
+      <li><a href="#contact">الحجز</a></li>
     </ul>
-    <button class="hamburger" id="hamburgerBtn"><span></span><span></span><span></span></button>
+    <a class="nav-cta" href="#contact">احجز الآن</a>
+    <button class="hamburger" id="hamburgerBtn" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
+
 <header class="hero" id="home">
-  <div class="hero-watermark">MASA</div>
-  <div class="hero-grid">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-inner">
     <div class="hero-copy reveal">
-      <p class="eyebrow">فندق بوتيك — مكة المكرمة</p>
-      <h1>إقامة تُحاكي <em>هدوء</em> الأصالة</h1>
-      <p class="lead">على مقربة من الحرم، يجمع نُزل الماسة بين الضيافة الحجازية العريقة وتصميم داخلي معاصر، لإقامة لا تُنسى.</p>
-      <a href="#rooms" class="link-cta">استكشف الأجنحة <span>←</span></a>
+      <p class="eyebrow">فندق بوتيك في مكة المكرمة</p>
+      <h1>إقامة هادئة تليق برحلتك إلى أطهر البقاع</h1>
+      <p class="lead">نزل الماسة يجمع دفء الضيافة المكية، غرفًا مصممة بعناية، وخدمة شخصية تجعل وصولك وإقامتك أكثر راحة وخصوصية.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#contact">طلب حجز</a>
+        <a class="btn ghost" href="#rooms">استعراض الأجنحة</a>
+      </div>
     </div>
-    <div class="hero-visual reveal">
-      <div class="visual-block" style="background-image:url('https://images.unsplash.com/photo-1621293954908-907159247fc8?auto=format&fit=crop&w=900&q=80');background-size:cover;background-position:center;"></div>
-      <div class="visual-tag">منذ 2011</div>
-    </div>
+    <aside class="hero-card reveal" aria-label="ملخص الفندق">
+      <span class="card-kicker">Nuzul Al-Masa</span>
+      <strong>300م</strong>
+      <p>قريب من المنطقة المركزية وخدمات النقل والضيافة على مدار الساعة.</p>
+    </aside>
   </div>
 </header>
-<section class="stats-strip reveal">
-  <div class="stat"><h3>48</h3><p>جناحاً فاخراً</p></div>
-  <div class="divider"></div>
-  <div class="stat"><h3>300م</h3><p>من الحرم المكي</p></div>
-  <div class="divider"></div>
-  <div class="stat"><h3>15</h3><p>عاماً من الضيافة</p></div>
-  <div class="divider"></div>
-  <div class="stat"><h3>24/7</h3><p>خدمة الضيوف</p></div>
+
+<main>
+<section class="booking-strip reveal" aria-label="حجز سريع">
+  <div>
+    <span>الوصول</span>
+    <strong>اختر التاريخ</strong>
+  </div>
+  <div>
+    <span>الإقامة</span>
+    <strong>ليلة أو أكثر</strong>
+  </div>
+  <div>
+    <span>الضيوف</span>
+    <strong>فرد / عائلة</strong>
+  </div>
+  <a class="btn compact" href="#contact">تحقق من التوفر</a>
 </section>
-<section class="about" id="about">
-  <div class="about-grid">
-    <div class="about-visual reveal"><div class="visual-block dark" style="background-image:url('https://images.unsplash.com/photo-1630587148265-761cbd139043?auto=format&fit=crop&w=900&q=80');background-size:cover;background-position:center;"></div></div>
-    <div class="about-copy reveal">
-      <p class="eyebrow">حكايتنا</p>
-      <h2>ضيافة بروح مكية أصيلة</h2>
-      <p>وُلدت فكرة الماسة من رغبة صادقة في تقديم تجربة إقامة تعكس دفء الضيافة الحجازية، مع لمسات تصميم عصرية تراعي راحة الضيف في كل تفصيلة.</p>
-      <p>يشرف على الفندق فريق متمرّس يضع تجربة الضيف في مقدمة أولوياته، ليكون الماسة امتداداً لذكرى الزيارة المباركة.</p>
+
+<section class="section about" id="about">
+  <div class="section-grid">
+    <div class="section-copy reveal">
+      <p class="eyebrow">التجربة</p>
+      <h2>فخامة هادئة بتفاصيل عربية معاصرة</h2>
+      <p>صُممت مساحات الفندق لتمنح الضيف إحساسًا بالسكينة منذ لحظة الدخول: ألوان دافئة، إضاءة ناعمة، وخدمة استقبال تعرف احتياجك قبل أن تطلبه.</p>
+      <div class="feature-list">
+        <div><span>01</span><p>استقبال وخدمة ضيوف على مدار الساعة.</p></div>
+        <div><span>02</span><p>غرف وأجنحة مهيأة للأفراد والعائلات.</p></div>
+        <div><span>03</span><p>موقع مناسب للوصول السريع إلى الخدمات.</p></div>
+      </div>
     </div>
-  </div>
-</section>
-<section class="rooms" id="rooms">
-  <p class="eyebrow center">الأجنحة</p>
-  <h2 class="center">مساحات هادئة، تصميم يعكس الفخامة</h2>
-  <div class="room-row reveal">
-    <div class="room-visual"><div class="visual-block" style="background-image:url('https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=800&q=80');background-size:cover;background-position:center;"></div></div>
-    <div class="room-copy">
-      <span class="room-tag">الأكثر طلباً</span>
-      <h3>جناح كلاسيك</h3>
-      <p>مساحة مريحة بإطلالة على المدينة، مؤثثة بعناية لتمنحك إقامة هادئة تليق بزيارتك.</p>
-      <div class="room-price">من 350 ر.س / الليلة</div>
-    </div>
-  </div>
-  <div class="room-row reverse reveal">
-    <div class="room-visual"><div class="visual-block" style="background-image:url('https://images.unsplash.com/photo-1629140727571-9b5c6f6267b4?auto=format&fit=crop&w=800&q=80');background-size:cover;background-position:center;"></div></div>
-    <div class="room-copy">
-      <h3>جناح ديلوكس</h3>
-      <p>جناح واسع يجمع بين الأناقة والراحة، مع صالة استقبال خاصة وخدمة تنظيف يومية.</p>
-      <div class="room-price">من 520 ر.س / الليلة</div>
-    </div>
-  </div>
-  <div class="room-row reveal">
-    <div class="room-visual"><div class="visual-block" style="background-image:url('https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=800&q=80');background-size:cover;background-position:center;"></div></div>
-    <div class="room-copy">
-      <span class="room-tag gold">إطلالة على الحرم</span>
-      <h3>جناح الماسة الملكي</h3>
-      <p>أرقى أجنحتنا، بإطلالة مباشرة على الحرم المكي الشريف، وخدمة ضيافة شخصية على مدار الساعة.</p>
-      <div class="room-price">من 890 ر.س / الليلة</div>
+    <div class="image-stack reveal">
+      <img src="https://images.unsplash.com/photo-1630587148265-761cbd139043?auto=format&fit=crop&w=1000&q=80" alt="ردهة فندقية فاخرة">
+      <div class="stack-note">ضيافة مكية بروح معاصرة</div>
     </div>
   </div>
 </section>
-<section class="gallery" id="gallery">
-  <p class="eyebrow center">المعرض</p>
-  <h2 class="center">لمحة من أجواء الفندق</h2>
+
+<section class="stats reveal" aria-label="أرقام الفندق">
+  <div><strong>48</strong><span>جناح وغرفة</span></div>
+  <div><strong>24/7</strong><span>خدمة استقبال</span></div>
+  <div><strong>15</strong><span>عامًا من الخبرة</span></div>
+  <div><strong>4.8</strong><span>رضا الضيوف</span></div>
+</section>
+
+<section class="section rooms" id="rooms">
+  <div class="section-head reveal">
+    <p class="eyebrow">الأجنحة</p>
+    <h2>اختر مساحة تناسب رحلتك</h2>
+  </div>
+  <div class="rooms-grid">
+    <article class="room-card reveal">
+      <img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=900&q=80" alt="جناح كلاسيك في فندق">
+      <div class="room-body">
+        <span class="pill">الأكثر طلبًا</span>
+        <h3>جناح كلاسيك</h3>
+        <p>غرفة مريحة بإضاءة هادئة ومرافق أساسية لزيارة قصيرة ومرتبة.</p>
+        <strong>من 350 ر.س / الليلة</strong>
+      </div>
+    </article>
+    <article class="room-card featured reveal">
+      <img src="https://images.unsplash.com/photo-1629140727571-9b5c6f6267b4?auto=format&fit=crop&w=900&q=80" alt="جناح ديلوكس واسع">
+      <div class="room-body">
+        <span class="pill">راحة إضافية</span>
+        <h3>جناح ديلوكس</h3>
+        <p>مساحة أوسع وصالة جلوس صغيرة، مناسبة للعائلات والإقامات الأطول.</p>
+        <strong>من 520 ر.س / الليلة</strong>
+      </div>
+    </article>
+    <article class="room-card reveal">
+      <img src="https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=900&q=80" alt="جناح ملكي فاخر">
+      <div class="room-body">
+        <span class="pill">اختيار فاخر</span>
+        <h3>جناح الماسة الملكي</h3>
+        <p>تجربة أكثر خصوصية مع تجهيزات فاخرة وخدمة ضيافة شخصية.</p>
+        <strong>من 890 ر.س / الليلة</strong>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="section amenities" id="amenities">
+  <div class="section-head reveal">
+    <p class="eyebrow">الخدمات</p>
+    <h2>كل ما تحتاجه لإقامة مريحة</h2>
+  </div>
+  <div class="amenities-grid">
+    <div class="amenity reveal"><span>01</span><h3>استقبال دائم</h3><p>فريق متواجد لخدمة الضيوف وترتيب متطلبات الوصول والمغادرة.</p></div>
+    <div class="amenity reveal"><span>02</span><h3>تنظيف يومي</h3><p>عناية يومية بالغرف مع تفاصيل تحافظ على راحة الإقامة.</p></div>
+    <div class="amenity reveal"><span>03</span><h3>إنترنت سريع</h3><p>اتصال مستقر مناسب للعمل والتواصل أثناء الرحلة.</p></div>
+    <div class="amenity reveal"><span>04</span><h3>ضيافة عائلية</h3><p>خيارات غرف وخدمات تناسب الأسر والزوار من خارج مكة.</p></div>
+  </div>
+</section>
+
+<section class="section gallery" id="gallery">
+  <div class="section-head reveal">
+    <p class="eyebrow">المعرض</p>
+    <h2>تفاصيل من أجواء المكان</h2>
+  </div>
   <div class="gallery-grid reveal">
-    <div class="g-item tall" style="background-image:url('https://images.unsplash.com/photo-1562438668-bcf0ca6578f0?auto=format&fit=crop&w=700&q=80');background-size:cover;background-position:center;"></div>
-    <div class="g-item" style="background-image:url('https://images.unsplash.com/photo-1587985064135-0366536eab42?auto=format&fit=crop&w=700&q=80');background-size:cover;background-position:center;"></div>
-    <div class="g-item" style="background-image:url('https://images.unsplash.com/photo-1607712617949-8c993d290809?auto=format&fit=crop&w=700&q=80');background-size:cover;background-position:center;"></div>
-    <div class="g-item tall" style="background-image:url('https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=700&q=80');background-size:cover;background-position:center;"></div>
-    <div class="g-item" style="background-image:url('https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=700&q=80');background-size:cover;background-position:center;"></div>
-    <div class="g-item" style="background-image:url('https://images.unsplash.com/photo-1612320743558-020669ff20e8?auto=format&fit=crop&w=700&q=80');background-size:cover;background-position:center;"></div>
+    <img class="wide" src="https://images.unsplash.com/photo-1562438668-bcf0ca6578f0?auto=format&fit=crop&w=1100&q=80" alt="واجهة فندق أنيقة">
+    <img src="https://images.unsplash.com/photo-1587985064135-0366536eab42?auto=format&fit=crop&w=700&q=80" alt="ردهة فندقية">
+    <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=700&q=80" alt="غرفة فندقية">
+    <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=700&q=80" alt="سرير فندقي فاخر">
   </div>
 </section>
-<section class="testimonials reveal">
-  <div class="quote-mark">”</div>
-  <p class="quote">إقامة استثنائية بكل ما تحمله الكلمة من معنى، الموقع مثالي والخدمة راقية جداً. سأعود بالتأكيد في زيارتي القادمة.</p>
-  <p class="quote-name">— أم عبدالرحمن، ضيفة الفندق</p>
+
+<section class="testimonial reveal">
+  <p>“موقع مريح، تعامل راقٍ، والغرفة كانت هادئة ونظيفة. تجربة مناسبة لمن يبحث عن إقامة مرتبة وقريبة من الخدمات.”</p>
+  <span>أم عبدالرحمن - ضيفة الفندق</span>
 </section>
+
 <section class="contact" id="contact">
   <div class="contact-grid">
-    <div class="contact-info reveal">
-      <p class="eyebrow light">تواصل معنا</p>
-      <h2>لحجز إقامتك القادمة</h2>
+    <div class="contact-copy reveal">
+      <p class="eyebrow">الحجز والتواصل</p>
+      <h2>أرسل طلبك وسيتواصل معك فريق الاستقبال</h2>
       <ul>
         <li><span>العنوان</span>طريق المسجد الحرام، مكة المكرمة</li>
-        <li><span>الهاتف</span>0500000000</li>
-        <li><span>واتساب</span>966500000000+</li>
-        <li><span>البريد</span>info@example.com</li>
+        <li><span>الهاتف</span><a href="tel:0500000000">0500000000</a></li>
+        <li><span>واتساب</span><a href="https://wa.me/966500000000" target="_blank" rel="noopener">966500000000+</a></li>
+        <li><span>البريد</span><a href="mailto:info@example.com">info@example.com</a></li>
       </ul>
     </div>
     <form class="contact-form reveal" id="bookingForm">
-      <div class="field"><input type="text" placeholder=" " required id="fname"><label>الاسم الكامل</label></div>
-      <div class="field"><input type="tel" placeholder=" " required id="fphone"><label>رقم الجوال</label></div>
-      <div class="field"><input type="date" placeholder=" " required id="fdate"><label>تاريخ الوصول</label></div>
+      <label>الاسم الكامل<input type="text" required id="fname" autocomplete="name"></label>
+      <label>رقم الجوال<input type="tel" required id="fphone" autocomplete="tel"></label>
+      <label>تاريخ الوصول<input type="date" required id="fdate"></label>
+      <label>نوع الجناح
+        <select id="froom" required>
+          <option value="">اختر الجناح</option>
+          <option>جناح كلاسيك</option>
+          <option>جناح ديلوكس</option>
+          <option>جناح الماسة الملكي</option>
+        </select>
+      </label>
       <button type="submit">إرسال طلب الحجز</button>
+      <p class="form-note" id="formNote" aria-live="polite"></p>
     </form>
   </div>
 </section>
-<footer><p>© 2026 نُزل الماسة — جميع الحقوق محفوظة</p></footer>
+</main>
+
+<footer>
+  <p>© 2026 نزل الماسة - جميع الحقوق محفوظة</p>
+</footer>
 <script src="script.js"></script>
 </body>
 </html>
